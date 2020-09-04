@@ -95,6 +95,12 @@ body{
   font-weight: bold;
   font-family: "Montserrat";
 }
+.bold-contact-white {
+  display: flex !important;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
 
 
 .home-title {
@@ -538,6 +544,12 @@ button {
   .bold-contact {
     display: flex !important;
     font-size: 14px;
+    font-weight: bold;
+    font-family: "Montserrat";
+  }
+  .bold-contact-white {
+    display: flex !important;
+    color: #ffffff;
     font-weight: bold;
     font-family: "Montserrat";
   }
