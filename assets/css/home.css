@@ -232,6 +232,7 @@ body{
   align-items: center;
   flex-direction: column;
   background: rgba(13, 13, 13, 0.8);
+  opacity: 0.75;
   border-radius: 4px;
   display: flex;
   width: 100%;
@@ -712,6 +713,7 @@ button {
   align-items: center;
   flex-direction: column;
   background: rgba(13, 13, 13, 0.8);
+  opacity: 0.75;
   border-radius: 4px;
   display: flex;
   width: 100%;

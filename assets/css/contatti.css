@@ -149,7 +149,7 @@ button {
 }
 .contatti-input-content{
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .column-flex{
@@ -447,7 +447,7 @@ button {
   .mobile-contatti-input-content{
     width: 75%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .form-control{
