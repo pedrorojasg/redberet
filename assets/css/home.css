@@ -211,7 +211,8 @@ body{
   letter-spacing: -0.015em;
   color: #000000;
   font-family: "Montserrat";
-  font-size: 34px;
+  font-size: 42px;
+  font-weight: bold;
   margin: 3.5rem;
 }
 .corsi-card-img {
@@ -693,7 +694,8 @@ button {
   letter-spacing: -0.015em;
   color: #000000;
   font-family: "Montserrat";
-  font-size: 29px;
+  font-size: 36px;
+  font-weight: bold;
   margin: 3.5rem;
 }
 .corsi-card-img-mobile {

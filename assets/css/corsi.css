@@ -126,7 +126,8 @@ body{
   letter-spacing: -0.015em;
   color: #000000;
   font-family: "Montserrat";
-  font-size: 34px;
+  font-size: 42px;
+  font-weight: bold;
   margin: 4rem;
 }
 .corsi-card-img {
