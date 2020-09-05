@@ -336,7 +336,8 @@ button {
 .chi-siamo-paragraph {
   font-family: "Montserrat";
   width: 85%;
-  height: 265px;
+  height: 7.5rem;
+  padding: 0px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -654,10 +655,10 @@ button {
   font-family: "Montserrat";
   width: 80%;
   height: 100%;
+  padding: 0px;
   left: 155px;
   font-style: normal;
   font-weight: normal;
-  padding-left: 2rem;
   margin-bottom: 1rem;
   font-size: 16px;
   line-height: 20px;
