@@ -136,7 +136,7 @@ p {
 }
 .card{
   width: 854px;
-  height: 228px;
+  height: 32rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -508,7 +508,7 @@ button {
   }
   .card{
     width: 854px;
-    height: 228px;
+    height: 34rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
