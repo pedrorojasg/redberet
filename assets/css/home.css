@@ -172,7 +172,7 @@ body{
 .chi-siamo-content {
   display: flex;
   justify-content: space-around;
-  margin: 5rem;
+  margin: 2rem 4rem 2rem 4rem;
 }
 
 .icon {
@@ -338,8 +338,9 @@ button {
 .chi-siamo-paragraph {
   font-family: "Montserrat";
   width: 100%;
-  height: 13rem;
+  height: 10rem;
   padding: 0px;
+  margin-bottom: 2.5rem;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
