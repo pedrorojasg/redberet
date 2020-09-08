@@ -152,7 +152,7 @@ button {
 .title-calendario{
   display: flex;
   justify-content: center;
-  margin: 3.5rem;
+  margin: 2rem 3.5rem 0.5rem 3.5rem;
 }
 iframe{
   display: flex;
@@ -164,7 +164,7 @@ iframe{
   width: 100%;
   display: flex;
   align-items: center;
-  margin: 4.5rem;
+  margin: 2rem 4rem 3rem 4rem;
   flex-direction: column;
 }
 .footer-calendario-paragraph{
@@ -457,7 +457,7 @@ iframe{
 .title-mobile-calendario{
   display: flex;
   justify-content: center;
-  margin: 1.5rem;
+  margin: 1.5rem 1.5rem 0.5rem 1.5rem;
 }
 .mobile-iframe{
   display: flex;
@@ -472,6 +472,7 @@ iframe{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0rem 0rem 2.5rem 0rem;
 }
 .footer-mobile-calendario-paragraph{
   font-family: "Montserrat";
