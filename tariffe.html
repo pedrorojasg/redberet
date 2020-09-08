@@ -20,6 +20,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("user_plD8rbepDX7c56zvgMWSW");
+      })();
+    </script>
   </head>
   <body>
     <div class="header-desktop">
@@ -214,6 +220,7 @@
             <div class="input-contatti">
               <div class="input-group flex-nowrap">
                 <input
+                  id="from_email"
                   type="text"
                   class="form-control margin-input"
                   placeholder="Indirizzo email o Telefono"
@@ -222,6 +229,7 @@
               <div class="input-contatti-textarea">
                 <div class="input-group-prepend">
                   <textarea
+                    id="message_email"
                     placeholder="Dettaglio"
                     class="form-control height-input"
                     aria-label="With textarea"
@@ -233,6 +241,7 @@
               <button
                 type="button"
                 class="btn btn-outline-light"
+                onclick="sendEmail()"
               >
                 Invia
               </button>
@@ -263,4 +272,43 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <script type="text/javascript">
+    var notifMessage = "La tua email è stata inviata correttamente! Ti contatteremo a breve!";
+
+    function cleaner() {
+      $('#from_email').val('');
+      $('#message_email').val('');
+      $('#mobile_from_email').val('');
+      $('#mobile_message_email').val('');
+    };
+    
+    function validateEmailValue(email) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    };
+    
+    function sendEmail() {
+      var fromValue = $('#from_email').val();
+      if (validateEmailValue(fromValue)) {
+        replyTo = fromValue;
+      } else {
+        replyTo = '';
+      };
+    
+      var templateParams = {
+        reply_to: replyTo,
+        from_name: fromValue,
+        message: $('#message_email').val()
+      };
+    
+      emailjs.send('service_azpkxxb','template_z0w1l1o',templateParams).then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert(notifMessage);
+        cleaner();
+      }, function(error) {
+        console.log('FAILED...', error);
+      });
+    };
+    
+    </script>
 </html>
