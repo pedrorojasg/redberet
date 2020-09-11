@@ -307,6 +307,9 @@ button {
   margin-left: 1rem;
   margin-top: 1rem;
 }
+.active-course {
+    color: #D41D34;
+}
 
 
 /* FOOTER  */

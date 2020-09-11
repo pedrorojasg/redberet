@@ -103,23 +103,23 @@
                 </div>
                 <div class="img-corsi-container">
                   <div class="img-corsi-content">
-                    <div class="light-img large-light-vector">
-                      <div class="light-vector">
+                    <div class="light-img large-light-vector" onclick="showCorteCourse(0)">
+                      <div id="tag_corte_0" class="shadow-vector">
                         BASE
                       </div>
                     </div>
-                    <div class="light-img large-light-vector">
-                      <div class="shadow-vector">
+                    <div class="light-img large-light-vector" onclick="showCorteCourse(1)">
+                      <div id="tag_corte_1" class="shadow-vector">
                         LIVELLO 1
                       </div>
                     </div>
-                    <div class="light-img large-light-vector">
-                      <div class="shadow-vector">
+                    <div class="light-img large-light-vector" onclick="showCorteCourse(2)">
+                      <div id="tag_corte_2" class="shadow-vector">
                         LIVELLO 2
                       </div>
                     </div>
-                    <div class="light-img large-light-vector">
-                      <div class="shadow-vector">
+                    <div class="light-img large-light-vector" onclick="showCorteCourse(3)">
+                      <div id="tag_corte_3" class="shadow-vector">
                         LIVELLO 3
                       </div>
                     </div>
@@ -171,9 +171,9 @@
                 <div class="corsi-card-container">
                   <div class="corsi-card">
                     <div class="card">
-                      <div id="corte_1" class="card-body">
+                      <div id="corte_0" class="card-body body-corte d-none">
                         <h5 class="card-title">
-                          Base ( 2 giorni 8h al giorno )
+                          Base ( 2 giorni 4h al giorno )
                         </h5>
                         <p class="card-text">Funzionamento armi da fuoco</p>
                         <p class="card-text">Legislazione delle armi( come la puoi comprare, come la puoi tenere)</p>
@@ -196,9 +196,9 @@
                         <p class="card-text">7. Fondina</p>
                         <p class="card-text">8. Kit medico personale</p>
                       </div>
-                      <div id="corte_2" class="card-body">
+                      <div id="corte_1" class="card-body body-corte d-none">
                         <h5 class="card-title">
-                          Avanzato - 1mo Livello ( 2 giorni 8h al giorno )
+                          Avanzato - 1mo Livello ( 2 giorni 4h al giorno )
                         </h5>
                         <p class="card-text">Ripasso corso anteriore</p>
                         <p class="card-text">Tiro lento e mirato</p>
@@ -218,9 +218,9 @@
                         <p class="card-text">7. Fondina</p>
                         <p class="card-text">8. Kit medico personale</p>
                       </div>
-                      <div id="corte_3" class="card-body">
+                      <div id="corte_2" class="card-body body-corte d-none">
                         <h5 class="card-title">
-                          Avanzato - 2do Livello ( 2 giorni 8h al giorno )
+                          Avanzato - 2do Livello ( 2 giorni 4h al giorno )
                         </h5>
                         <p class="card-text">Ripasso corso anteriore</p>
                         <p class="card-text">Tiro in movimento a coppia</p>
@@ -240,9 +240,9 @@
                         <p class="card-text">7. Fondina</p>
                         <p class="card-text">8. Kit medico personale</p>
                       </div>
-                      <div id="corte_4" class="card-body">
+                      <div id="corte_3" class="card-body body-corte d-none">
                         <h5 class="card-title">
-                          Avanzato - 3zo Livello ( 2 giorni 8h al giorno )
+                          Avanzato - 3zo Livello ( 2 giorni 4h al giorno )
                         </h5>
                         <p class="card-text">Ripasso corso anteriore</p>
                         <p class="card-text">Tiro difensivo operativo</p>
@@ -295,7 +295,7 @@
                     <div class="card">
                       <div class="card-body">
                         <h5 class="card-title">
-                          Base ( 2 giorni 8h al giorno )
+                          Base ( 2 giorni 4h al giorno )
                         </h5>
                         <p class="card-text">Calcolo balistico</p>
                         <p class="card-text">Taratura ottica</p>
@@ -346,7 +346,7 @@
                     <div class="card">
                       <div class="card-body">
                         <h5 class="card-title">
-                          Base ( 2 giorni 8h al giorno )
+                          Base ( 2 giorni 4h al giorno )
                         </h5>
                         <p class="card-text">IL SUPER CORSO!!</p>
                       </div>
@@ -475,6 +475,24 @@
       console.log('FAILED...', error);
     });
   };
+</script>
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+  showCorteCourse(0);
+});
+
+function showCorteCourse(number) {
+  corsoTagId = "#tag_corte_X".replace('X',String(number));
+  corsoId = "#corte_X".replace('X',String(number));
+
+  $('.shadow-vector').removeClass('active-course');
+  $('.body-corte').addClass('d-none');
+  $(corsoTagId).addClass('active-course');
+  $(corsoId).removeClass('d-none');
+};
+
 </script>
 
 </html>
