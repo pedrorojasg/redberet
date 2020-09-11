@@ -670,7 +670,7 @@ button {
     border: 2px solid #d41d34;
     box-sizing: border-box;
     border-radius: 3px;
-    margin-top: 1rem;
+    margin: 0.25rem 0rem 0rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
