@@ -1,467 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red BERET Poligono</title>
-    <link rel="icon" href="./assets/img/corsi-img/icon2429.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="./assets/css/corsi.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-      emailjs.init("user_plD8rbepDX7c56zvgMWSW");
-      })();
-    </script>
-  </head>
-  <body>
-    <div class="header-desktop">
-      <div class="nav-container">
-        <nav class="nav">
-          <a href="index.html" class="nav-link bold-home">HOME</a>
-          <a href="corsi.html" class="nav-link">CORSI</a>
-          <a href="tariffe.html" class="nav-link">TARIFFE</a>
-          <a href="index.html#indirizzo" class="nav-link">INDIRIZZO</a>
-          <a href="calendario.html" class="nav-link">CALENDARIO</a>
-          <a href="index.html#chisiamo" class="nav-link">POLIGONO</a>
-          <a href="contatti.html" class="nav-link">CONTATTI</a>
-          <div class="contact">
-            <a class="bold-contact-white" href="tel:+393488841972">Call: +39 348-884-1972</a>
-            <p>8am to 6pm</p>
-          </div>
-        </nav>
-      </div>
-    </div>
 
-    <div class="header-mobile">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="navbar-content">
-          <img class="logo-nav-bar" src="./assets/img/corsi-img/logo red beret.png" alt="">
-          <div class="contact">
-            <a class="bold-contact-white" href="tel:+393488841972">Call: +39 348-884-1972</a>
-            <p class="no-margin">8am to 6pm</p>
-          </div>
-          <button
-            class="navbar-toggler btn-nav-mobile"
-            type="button"
-            data-toggle="modal"
-            data-target="#exampleModal"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa fa-bars color-white" aria-hidden="true"></i>
-          </button>
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel"></h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="modal-column">
-                    <nav class="nav flex-column column-align">
-                      <a class="modal-link home-modal-bold" href="index.html">Home</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="modal-link home-modal" href="corsi.html">Corsi</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="modal-link home-modal" href="tariffe.html">Tariffe</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="modal-link home-modal" href="index.html#indirizzo">Indirizzo</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="modal-link home-modal" href="calendario.html">Calendario</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="modal-link home-modal" href="index.html#chisiamo">Poligono</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="modal-link home-modal" href="contatti.html">Contatti</a>
-                      <div class="dropdown-divider"></div>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red BERET Poligono</title>
+  <link rel="icon" href="./assets/img/corsi-img/icon2429.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/corsi.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_plD8rbepDX7c56zvgMWSW");
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="header-desktop">
+    <div class="nav-container">
+      <nav class="nav">
+        <a href="index.html" class="nav-link bold-home">HOME</a>
+        <a href="corsi.html" class="nav-link">CORSI</a>
+        <a href="tariffe.html" class="nav-link">TARIFFE</a>
+        <a href="index.html#indirizzo" class="nav-link">INDIRIZZO</a>
+        <a href="calendario.html" class="nav-link">CALENDARIO</a>
+        <a href="index.html#chisiamo" class="nav-link">POLIGONO</a>
+        <a href="contatti.html" class="nav-link">CONTATTI</a>
+        <div class="contact">
+          <a class="bold-contact-white" href="tel:+393488841972">Call: +39 348-884-1972</a>
+          <p>8am to 6pm</p>
         </div>
       </nav>
     </div>
+  </div>
 
-    <div class="body">
-      <div class="corsi-container">
-        <div class="row">
-          <div class="col-12">
-            <div class="corsi-content">
-              <h3 class="corsi-title">Corsi</h3>
-              <div class="corsi-card-img">
-                <div class="corsi-img-container">
-                  <div class="corsi-img">
-                    <img
-                      class="border-corsi-img"
-                      src="./assets/img/index-img/glock.png"
-                      alt="..."
-                    />
-                    <div class="corsi-img-content">
-                      <p class="title">Corso armi corte</p>
-                    </div>
+  <div class="header-mobile">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="navbar-content">
+        <img class="logo-nav-bar" src="./assets/img/corsi-img/logo red beret.png" alt="">
+        <div class="contact">
+          <a class="bold-contact-white" href="tel:+393488841972">Call: +39 348-884-1972</a>
+          <p class="no-margin">8am to 6pm</p>
+        </div>
+        <button class="navbar-toggler btn-nav-mobile" type="button" data-toggle="modal" data-target="#exampleModal"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars color-white" aria-hidden="true"></i>
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="modal-column">
+                  <nav class="nav flex-column column-align">
+                    <a class="modal-link home-modal-bold" href="index.html">Home</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="modal-link home-modal" href="corsi.html">Corsi</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="modal-link home-modal" href="tariffe.html">Tariffe</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="modal-link home-modal" href="index.html#indirizzo">Indirizzo</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="modal-link home-modal" href="calendario.html">Calendario</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="modal-link home-modal" href="index.html#chisiamo">Poligono</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="modal-link home-modal" href="contatti.html">Contatti</a>
+                    <div class="dropdown-divider"></div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="body">
+    <div class="corsi-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="corsi-content">
+            <h3 class="corsi-title">Corsi</h3>
+            <div class="corsi-card-img">
+              <div class="corsi-img-container">
+                <div class="corsi-img">
+                  <img class="border-corsi-img" src="./assets/img/corsi-img/armicorte_1.jpg" alt="..." />
+                  <div class="corsi-img-content">
+                    <p class="title">Corso armi corte</p>
                   </div>
-                  <div class="img-corsi-container">
-                    <div class="img-corsi-content">
-                      <div class="light-img">
-                        <div class="light-vector">
-                          <img
-                            src="./assets/img/corsi-img/Vector (2).png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div class="shadow-img">
-                        <div class="shadow-vector">
-                          <img
-                            class="shadow-vector-opacity"
-                            src="./assets/img/corsi-img/Group 2428.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div class="shadow-img">
-                        <div class="shadow-vector">
-                          <img
-                            class="shadow-vector-opacity"
-                            src="./assets/img/corsi-img/Group 2429.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div class="shadow-img">
-                        <div class="shadow-vector">
-                          <img
-                            class="shadow-vector-opacity"
-                            src="./assets/img/corsi-img/Group (3).png"
-                            alt=""
-                          />
-                        </div>
+                </div>
+                <div class="img-corsi-container">
+                  <div class="img-corsi-content">
+                    <div class="light-img">
+                      <div class="light-vector">
                       </div>
                     </div>
-                    
-                    <div class="img-corsi-content-mobile">
-                      <div
-                        id="carouselExampleControls"
-                        class="carousel slide full-width"
-                        data-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="light-img">
-                              <div class="light-vector">
-                                <img
-                                  src="./assets/img/corsi-img/Vector (2).png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="light-img">
-                              <div class="light-vector">
-                                <img
-                                  src="./assets/img/corsi-img/Group 2428.png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="light-img">
-                              <div class="light-vector">
-                                <img
-                                  src="./assets/img/corsi-img/Group 2429.png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="light-img">
-                              <div class="light-vector">
-                                <img
-                                  src="./assets/img/corsi-img/Group (3).png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <a
-                          class="carousel-control-prev"
-                          href="#carouselExampleControls"
-                          role="button"
-                          data-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a
-                          class="carousel-control-next"
-                          href="#carouselExampleControls"
-                          role="button"
-                          data-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Next</span>
-                        </a>
+                    <div class="shadow-img">
+                      <div class="shadow-vector">
+                      </div>
+                    </div>
+                    <div class="shadow-img">
+                      <div class="shadow-vector">
+                      </div>
+                    </div>
+                    <div class="shadow-img">
+                      <div class="shadow-vector">
                       </div>
                     </div>
                   </div>
-                  <div class="corsi-card-container">
-                    <div class="corsi-card">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">
-                            Base ( 2 giorni 8h al giorno )
-                          </h5>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                        </div>
-                        <div class="end-box-card">
-                          <div class="green-box-paragraph">
-                            <p class="box-paragraph">Prezzo</p>
-                            <p class="box-paragraph">320$</p>
+
+                  <div class="img-corsi-content-mobile">
+                    <div id="carouselExampleControls" class="carousel slide full-width" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="light-img">
+                            <div class="light-vector">
+                            </div>
                           </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="light-img">
+                            <div class="light-vector">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="light-img">
+                            <div class="light-vector">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="light-img">
+                            <div class="light-vector">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="corsi-card-container">
+                  <div class="corsi-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Base ( 2 giorni 8h al giorno )
+                        </h5>
+                        <p class="card-text">Some quick example text.</p>
+                        <p class="card-text">Some quick example text.</p>
+                        <p class="card-text">Some quick example text.</p>
+                        <p class="card-text">Some quick example text.</p>
+                        <p class="card-text">Some quick example text.</p>
+                        <p class="card-text">Some quick example text.</p>
+                        <p class="card-text">Some quick example text.</p>
+                      </div>
+                      <div class="end-box-card">
+                        <div class="green-box-paragraph">
+                          <p class="box-paragraph">Prezzo</p>
+                          <p class="box-paragraph">300€</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="corsi-img-container">
-                  <div class="corsi-img">
-                    <img
-                      class="border-corsi-img"
-                      src="./assets/img/index-img/sniper.png"
-                      alt="..."
-                    />
-                    <div class="corsi-img-content">
-                      <p class="title">Corso armi lunghe</p>
-                    </div>
+              </div>
+              <div class="corsi-img-container">
+                <div class="corsi-img">
+                  <img class="border-corsi-img" src="./assets/img/corsi-img/armilunghe_2.jpg" alt="..." />
+                  <div class="corsi-img-content">
+                    <p class="title">Corso armi lunghe</p>
                   </div>
-                  <div class="img-corsi-container">
-                    <div class="img-corsi-content">
-                      <div class="light-img">
-                        <div class="light-vector">
-                          <img
-                            src="./assets/img/corsi-img/Vector (2).png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div class="shadow-img">
-                        <div class="shadow-vector">
-                          <img
-                            class="shadow-vector-opacity"
-                            src="./assets/img/corsi-img/Group 2429 (2).png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div class="shadow-img">
-                        <div class="shadow-vector">
-                          <img
-                            class="shadow-vector-opacity"
-                            src="./assets/img/corsi-img/Group 2429.png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <div class="shadow-img">
-                        <div class="shadow-vector">
-                          <img
-                            class="shadow-vector-opacity"
-                            src="./assets/img/corsi-img/Group (3).png"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="img-corsi-content-mobile">
-                      <div
-                        id="carouselExampleControls"
-                        class="carousel slide full-width"
-                        data-ride="carousel"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="light-img">
-                              <div class="light-vector">
-                                <img
-                                  src="./assets/img/corsi-img/Vector (2).png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="light-img">
-                              <div class="light-vector">
-                                <img
-                                  src="./assets/img/corsi-img/Group 2429 (2).png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="light-img">
-                              <div class="light-vector">
-                                <img
-                                  src="./assets/img/corsi-img/Group 2429.png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="light-img">
-                              <div class="light-vector">
-                                <img
-                                  src="./assets/img/corsi-img/Group (3).png"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <a
-                          class="carousel-control-prev"
-                          href="#carouselExampleControls"
-                          role="button"
-                          data-slide="prev"
-                        >
-                          <span
-                            class="carousel-control-prev-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a
-                          class="carousel-control-next"
-                          href="#carouselExampleControls"
-                          role="button"
-                          data-slide="next"
-                        >
-                          <span
-                            class="carousel-control-next-icon"
-                            aria-hidden="true"
-                          ></span>
-                          <span class="sr-only">Next</span>
-                        </a>
+                </div>
+                <div class="large-img-corsi-container">
+                  <div class="large-img-corsi-content">
+                    <div class="large-light-img">
+                      <div class="large-light-vector">
+                        BASE
                       </div>
                     </div>
                   </div>
-                  <div class="corsi-card-container">
-                    <div class="corsi-card">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">
-                            Base ( 2 giorni 8h al giorno )
-                          </h5>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                        </div>
-                        <div class="end-box-card">
-                          <div class="green-box-paragraph">
-                            <p class="box-paragraph">Prezzo</p>
-                            <p class="box-paragraph">320$</p>
-                          </div>
+                </div>
+                <div class="corsi-card-container">
+                  <div class="corsi-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Base ( 2 giorni 8h al giorno )
+                        </h5>
+                        <p class="card-text">Calcolo balistico</p>
+                        <p class="card-text">Taratura ottica</p>
+                        <p class="card-text">Camouflage</p>
+                        <p class="card-text">Porto e gestione campale del arma</p>
+                        <p class="card-text">Tiro con visione notturna</p>
+                        <p class="card-text">Intensificatore di luce/infrarosso/termico</p>
+                        <br><br>
+                        <p class="card-text">Requisiti per i corsi:</p>
+                        <p class="card-text">1. Porto d'armi</p>
+                        <p class="card-text">2. Cuffie</p>
+                        <p class="card-text">3. Occhiali</p>
+                        <p class="card-text">4. Set pulizia armi</p>
+                        <p class="card-text">5. Ginocchiera</p>
+                        <p class="card-text">6. Arma propria</p>
+                        <p class="card-text">7. Fondina</p>
+                        <p class="card-text">8. Kit medico personale</p>
+                        
+                      </div>
+                      <div class="end-box-card">
+                        <div class="green-box-paragraph">
+                          <p class="box-paragraph">Prezzo</p>
+                          <p class="box-paragraph">300€</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="corsi-img-container">
-                  <div class="corsi-img">
-                    <img
-                      class="border-corsi-img"
-                      src="./assets/img/index-img/sniper.png"
-                      alt="..."
-                    />
-                    <div class="corsi-img-content">
-                      <p class="title">Corso istruttore</p>
-                    </div>
+              </div>
+              <div class="corsi-img-container">
+                <div class="corsi-img">
+                  <img class="border-corsi-img" src="./assets/img/index-img/sniper.png" alt="..." />
+                  <div class="corsi-img-content">
+                    <p class="title">Corso istruttore</p>
                   </div>
-                  <div class="large-img-corsi-container">
-                    <div class="large-img-corsi-content">
-                      <div class="large-light-img">
-                        <div class="large-light-vector">
-                          <img
-                            src="./assets/img/corsi-img/Group 2440.png"
-                            alt=""
-                          />
-                        </div>
+                </div>
+                <div class="large-img-corsi-container">
+                  <div class="large-img-corsi-content">
+                    <div class="large-light-img">
+                      <div class="large-light-vector">
+                        DEVE FARE 4 LIVELLI DI ARMI CORTE
                       </div>
                     </div>
                   </div>
-                  <div class="corsi-card-container">
-                    <div class="corsi-card">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">
-                            Base ( 2 giorni 8h al giorno )
-                          </h5>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                          <p class="card-text">Some quick example text.</p>
-                        </div>
-                        <div class="end-box-card">
-                          <div class="green-box-paragraph">
-                            <p class="box-paragraph">Prezzo</p>
-                            <p class="box-paragraph">320$</p>
-                          </div>
+                </div>
+                <div class="corsi-card-container">
+                  <div class="corsi-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Base ( 2 giorni 8h al giorno )
+                        </h5>
+                        <p class="card-text">IL SUPER CORSO!!</p>
+                      </div>
+                      <div class="end-box-card">
+                        <div class="green-box-paragraph">
+                          <p class="box-paragraph">Prezzo</p>
+                          <p class="box-paragraph">300€</p>
                         </div>
                       </div>
                     </div>
@@ -473,131 +276,116 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="footer">
-      <div class="footer-container">
-        <div class="sitemap only-desktop">
-          <nav class="nav flex-column sitemap-column">
-            <a class="nav-link bold-home" href="index.html">Home</a>
+  <div class="footer">
+    <div class="footer-container">
+      <div class="sitemap only-desktop">
+        <nav class="nav flex-column sitemap-column">
+          <a class="nav-link bold-home" href="index.html">Home</a>
+          <a class="nav-link" href="index.html#chisiamo">Poligono</a>
+          <a class="nav-link" href="index.html#indirizzo">Indirizzo</a>
+          <a class="nav-link" href="calendario.html">Calendario</a>
+          <a class="nav-link" href="corsi.html">Corsi</a>
+          <a class="nav-link" href="contatti.html">Contatti</a>
+        </nav>
+      </div>
+      <div class="sitemap-mobile only-mobile">
+        <nav class="nav flex-column sitemap-column">
+          <div class="item-nav">
+            <a class="nav-link nav-footer-link bold-home" href="index.html">Home</a>
             <a class="nav-link" href="index.html#chisiamo">Poligono</a>
             <a class="nav-link" href="index.html#indirizzo">Indirizzo</a>
+          </div>
+          <div class="item-nav">
             <a class="nav-link" href="calendario.html">Calendario</a>
             <a class="nav-link" href="corsi.html">Corsi</a>
             <a class="nav-link" href="contatti.html">Contatti</a>
-          </nav>
-        </div>
-        <div class="sitemap-mobile only-mobile">
-          <nav class="nav flex-column sitemap-column">
-            <div class="item-nav">
-              <a class="nav-link nav-footer-link bold-home" href="index.html">Home</a>
-              <a class="nav-link" href="index.html#chisiamo">Poligono</a>
-              <a class="nav-link" href="index.html#indirizzo">Indirizzo</a>
+          </div>
+        </nav>
+      </div>
+      <div class="contatti">
+        <div class="contact-us">
+          <p class="contatti-title">Contatti</p>
+          <div class="input-contatti">
+            <div class="input-group flex-nowrap">
+              <input id="from_email" type="text" class="form-control margin-input"
+                placeholder="Indirizzo email o Telefono" />
             </div>
-            <div class="item-nav">
-              <a class="nav-link" href="calendario.html">Calendario</a>
-              <a class="nav-link" href="corsi.html">Corsi</a>
-              <a class="nav-link" href="contatti.html">Contatti</a>
-            </div>
-          </nav>
-        </div>
-        <div class="contatti">
-          <div class="contact-us">
-            <p class="contatti-title">Contatti</p>
-            <div class="input-contatti">
-              <div class="input-group flex-nowrap">
-                <input
-                  id="from_email"
-                  type="text"
-                  class="form-control margin-input"
-                  placeholder="Indirizzo email o Telefono"
-                />
-              </div>
-              <div class="input-contatti-textarea">
-                <div class="input-group-prepend">
-                  <textarea
-                    id="message_email"
-                    placeholder="Dettaglio"
-                    class="form-control height-input"
-                    aria-label="With textarea"
-                  ></textarea>
-                </div>
+            <div class="input-contatti-textarea">
+              <div class="input-group-prepend">
+                <textarea id="message_email" placeholder="Dettaglio" class="form-control height-input"
+                  aria-label="With textarea"></textarea>
               </div>
             </div>
-            <div class="button-contatti">
-              <button
-                type="button"
-                class="btn btn-outline-light"
-                onclick="sendEmail()"
-              >
-                Invia
-              </button>
-            </div>
+          </div>
+          <div class="button-contatti">
+            <button type="button" class="btn btn-outline-light" onclick="sendEmail()">
+              Invia
+            </button>
           </div>
         </div>
       </div>
-      <div class="end-footer">
-        <p class="paragraph-footer">
-          © 2020 Red Beret Shooting Range. Tutti i diritti riservati.
-        </p>
-      </div>
-      <div class="end-footer">
-        <a href="https://www.linkedin.com/in/pedro-rojas-gavidia-1b9319a8" class="paragraph-footer">Developed by Pedro Rojas Gavidia</a>
-      </div>
     </div>
+    <div class="end-footer">
+      <p class="paragraph-footer">
+        © 2020 Red Beret Shooting Range. Tutti i diritti riservati.
+      </p>
+    </div>
+    <div class="end-footer">
+      <a href="https://www.linkedin.com/in/pedro-rojas-gavidia-1b9319a8" class="paragraph-footer">Developed by Pedro
+        Rojas Gavidia</a>
+    </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-  <script type="text/javascript">
-    var notifMessage = "La tua email è stata inviata correttamente! Ti contatteremo a breve!";
-    
-    function cleaner() {
-      $('#from_email').val('');
-      $('#message_email').val('');
-      $('#mobile_from_email').val('');
-      $('#mobile_message_email').val('');
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+<script type="text/javascript">
+  var notifMessage = "La tua email è stata inviata correttamente! Ti contatteremo a breve!";
+
+  function cleaner() {
+    $('#from_email').val('');
+    $('#message_email').val('');
+    $('#mobile_from_email').val('');
+    $('#mobile_message_email').val('');
+  };
+
+  function validateEmailValue(email) {
+    const re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  function sendEmail() {
+    var fromValue = $('#from_email').val();
+    if (validateEmailValue(fromValue)) {
+      replyTo = fromValue;
+    } else {
+      replyTo = '';
     };
 
-    function validateEmailValue(email) {
-        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
+    var templateParams = {
+      reply_to: replyTo,
+      from_name: fromValue,
+      message: $('#message_email').val()
     };
-    
-    function sendEmail() {
-      var fromValue = $('#from_email').val();
-      if (validateEmailValue(fromValue)) {
-        replyTo = fromValue;
-      } else {
-        replyTo = '';
-      };
-    
-      var templateParams = {
-        reply_to: replyTo,
-        from_name: fromValue,
-        message: $('#message_email').val()
-      };
-    
-      emailjs.send('service_azpkxxb','template_z0w1l1o',templateParams).then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        alert(notifMessage);
-        cleaner();
-      }, function(error) {
-        console.log('FAILED...', error);
-      });
-    };
-    
-    </script>
+
+    emailjs.send('service_azpkxxb', 'template_z0w1l1o', templateParams).then(function (response) {
+      console.log('SUCCESS!', response.status, response.text);
+      alert(notifMessage);
+      cleaner();
+    }, function (error) {
+      console.log('FAILED...', error);
+    });
+  };
+</script>
+
 </html>
