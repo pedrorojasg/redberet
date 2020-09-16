@@ -49,6 +49,7 @@ body{
   line-height: 134.5%;
   letter-spacing: -0.015em;
   color: #ffffff;
+  padding: 0.5rem;
 }
 .nav-link-active {
   display: flex !important;
