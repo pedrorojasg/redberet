@@ -14,6 +14,10 @@ body{
     height: 100% !important;
   }
 
+.margin-2r{
+  margin: 2rem;
+}
+
 .col-12 {
   position: relative;
   width: 100%;
@@ -655,6 +659,7 @@ button {
   width: 100%;
   padding-bottom: 2rem;
 }
+
 .chi-siamo-paragraph {
   font-family: "Montserrat";
   width: 100%;
