@@ -24,6 +24,10 @@ body{
   padding: 0;
 }
 
+.partner-logo-index {
+  height: 120px;
+}
+
 .header-desktop {
   width: 100%;
 }
@@ -343,7 +347,7 @@ button {
 .chi-siamo-paragraph {
   font-family: "Montserrat";
   width: 100%;
-  height: 21rem;
+  height: 22.5rem;
   padding: 0px;
   margin-bottom: 2.5rem;
   font-style: normal;
@@ -978,4 +982,9 @@ p {
   margin: 1rem 0 !important;
   margin-right: 2rem !important;
 }
+
+.partner-logo-index {
+    height: 80px;
+  }
+
 }
